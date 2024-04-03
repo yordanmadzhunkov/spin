@@ -11,6 +11,23 @@ anyhow = "1"
 http = "0.2.9"
 serde = { version = "1.0", features = ["derive"] }
 spin-sdk = "2.2.0"
-wasi-nn = "0.6.0"
+
+wasi-nn = { version = "0.6.0" }
+image = { version = "0.24.7", default-features = false, features = [
+    "gif",
+    "jpeg",
+    "ico",
+    "png",
+    "pnm",
+    "tga",
+    "tiff",
+    "webp",
+    "bmp",
+    "hdr",
+    "dxt",
+    "dds",
+    "farbfeld",
+] }
+
 
 [workspace]
